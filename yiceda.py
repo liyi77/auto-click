@@ -38,9 +38,9 @@ def submit_once_student(count):
     pyautogui.click()
     time.sleep(2)
     # go to '首页'
-    # pyautogui.moveTo(210+x, 315+y, 1)
-    # pyautogui.click()
-    # time.sleep(2)
+    pyautogui.moveTo(210+x, 315+y, 1)
+    pyautogui.click()
+    time.sleep(2)
 
 def report_health_info(): 
     # with open("./JsonFormat.json", encoding="utf-8") as fn1: #json file path
@@ -50,6 +50,6 @@ def report_health_info():
     # pyperclip.copy(field_data['Name'])
     # pyautogui.hotkey('ctrl', 'v')
     submit_once_student(0)
+    submit_once_student(1)
     print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
-    # submit_once_student(1)
     # pyautogui.typewrite(field_data['Identity'], 0.2)
